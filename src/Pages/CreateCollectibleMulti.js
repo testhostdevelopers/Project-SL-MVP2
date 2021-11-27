@@ -51,7 +51,7 @@ const CreateCollectibleMulti = () => {
                             <h2>Create multiple collectable</h2>
                         </div>
 
-                        <div className="col-sm-12 col-lg-6">
+                        <div className="col-sm-12 col-md-7">
                             <b className="mt-5">Upload File</b>
 
                             <div>
@@ -64,7 +64,7 @@ const CreateCollectibleMulti = () => {
                                 </div>
                             </div>
 
-                            <div className="mt-4">
+                            <div className="mt-5 marketplace">
                                 <div className="d-flex justify-content-between">
                                     <b><h5>Put on marketplace</h5></b>
                                     <div className="custom-control custom-switch">
@@ -73,18 +73,18 @@ const CreateCollectibleMulti = () => {
                                     </div>
                                 </div>
 
-                                <div className="color-gray">Enter price to allow user instantly purchase your NFT</div>
+                                <div className="color-gray marketplace-content">Enter price to allow user instantly purchase your NFT</div>
 
                                 <div className="d-flex justify-content-between mt-3 row">
-                                    <div className="putOnMarketplace border-radius btn-primary-outline-responsive col-sm-12 col-lg-5"><img src={collectibleSingle} width="32" alt="" /><b> Fixed Price</b></div>
-                                    <div className="putOnMarketplace border-radius border-gray col-sm-12 col-lg-5"><img src={sonsuz} width="40" alt="" /> <b>Open for bids</b></div>
+                                    <div className="putOnMarketplace border-radius btn-primary-outline-responsive col-sm-12 col-lg-5"><img src={collectibleSingle} width="32" alt="" /><b> Fixed <br/> Price</b></div>
+                                    <div className="putOnMarketplace border-radius border-gray col-sm-12 col-lg-5"><img src={sonsuz} width="40" alt="" /> <b>Open for <br/> bids</b></div>
                                 </div>
 
                                 <div className="mt-5">
-                                    <h5><b>Prise</b></h5>
+                                    <h5><b>Price</b></h5>
 
                                     <div className="prize-single-collectible d-flex flex-column">
-                                        <div className="d-flex justify-content-between">
+                                        <div className="d-flex justify-content-between align-items-center">
                                             <span className="color-gray">
                                                 Enter price for one piece
                                             </span>
@@ -105,15 +105,28 @@ const CreateCollectibleMulti = () => {
                                     </div>
                                 </div>
 
+                                <div className="prize-single-collectible d-flex flex-column">
+                                    <div className="d-flex justify-content-between mt-3">
+                                        <b><h5>Unlock once Purchased</h5></b>
+                                        <div className="custom-control custom-switch">
+                                            <input type="checkbox" className="custom-control-input" id="customSwitch2" />
+                                            <label className="custom-control-label" htmlFor="customSwitch2"></label>
+                                        </div>
+                                    </div>
+                                    <div className="color-gray">Content will be unlocked after successful transaction</div>
+                                    {/* <div>
+                                        <p className="color-gray mt-3 mb-0">Digital key, code to redeem or link to a file.</p>
+                                    </div> */}
+                                </div>
 
                             </div>
                         </div>
 
 
 
-                        <div className="col-sm-12 col-lg-6 pl-5">
-                            <h5><b>Preview</b> </h5>
-                            <div className="border-gray h-75 w-50 text-center border-radius mt-4 color-gray d-flex justify-content-center align-items-center p-5">
+                        <div className="col-sm-12 col-md-5 pl-5 brand-new-nfp">
+                            <b>Preview</b>
+                            <div className="border-gray upload-box text-center border-radius mt-4 color-gray d-flex justify-content-center align-items-center p-5">
                                 Upload file to preview your brand new NFT
                             </div>
                         </div>
@@ -122,17 +135,17 @@ const CreateCollectibleMulti = () => {
 
                         <div className="position-relative col-sm-12">
                             <div className="d-flex justify-content-between mt-5 mb-4">
-                                <b><h5 className="color-ping">Choose collection</h5></b>
+                                <b><h5>Choose collection</h5></b>
                             </div>
 
-                            <div className="d-flex">
-                                <div style={{ width: "230px" }} className="putOnMarketplace border-radius border" onClick={() => { setSingleCollectionPopup(true); document.body.style.overflow = "hidden"; }}>
+                            <div className="d-flex choose-collection">
+                                <div className="putOnMarketplace border-gray border-radius btn-primary-outline-responsive" onClick={() => { setSingleCollectionPopup(true); document.body.style.overflow = "hidden"; }}>
                                     <img src={plus} width="40" alt="" />
                                     <b> Create</b>
                                     <div><small className="color-gray">ERC-721</small></div>
                                 </div>
 
-                                <Swiper slidesPerView={4} navigation={true}>
+                                <Swiper className="slider"  slidesPerView={4.3} navigation={true}>
                                     <SwiperSlide>
                                         <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
                                             <img src={darkcircle} width="40" alt="" />
@@ -199,7 +212,7 @@ const CreateCollectibleMulti = () => {
                             </div>
 
 
-                            <div className="mt-5">
+                            <div className="mt-3">
                                 <div className="d-flex">
                                     <h5><b>Description</b> </h5><span><small className="color-gray ml-2">(Optional)</small></span>
                                 </div>
@@ -212,7 +225,7 @@ const CreateCollectibleMulti = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-lg-6">
+                        <div className="col-sm-12 col-lg-6 copies">
                             <div className="mt-5 border-gray border-radius h-75 p-4">
                                 <div className="d-flex">
                                     <h5><b>Royalties</b> </h5>
@@ -231,7 +244,7 @@ const CreateCollectibleMulti = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-lg-6">
+                        <div className="col-sm-12 col-lg-6 copies">
                             <div className="mt-5 border-gray border-radius h-75 p-4">
                                 <div className="d-flex">
                                     <h5><b>No. of copies</b> </h5>
@@ -248,38 +261,38 @@ const CreateCollectibleMulti = () => {
                     </div>
 
 
-                    <div className="col-12-sm col-lg-6">
-                    <div className="mt-5">
-                        <div className="d-flex">
-                            <h5><b>Properties</b> </h5><span><small className="color-gray ml-2">(Optional)</small></span>
-                        </div>
-
-                        <div className="d-flex">
-                            <div className="prize-single-collectible d-flex w-100">
-                                <input type="text" placeholder="e. g.  Size" />
+                    {/* <div className="col-12-sm col-lg-6">
+                        <div className="mt-5">
+                            <div className="d-flex">
+                                <h5><b>Properties</b> </h5><span><small className="color-gray ml-2">(Optional)</small></span>
                             </div>
 
-                            <div className="prize-single-collectible d-flex w-100 ml-3">
-                                <input type="text" placeholder="e. g.  Medium" />
+                            <div className="d-flex">
+                                <div className="prize-single-collectible d-flex w-100">
+                                    <input type="text" placeholder="e. g.  Size" />
+                                </div>
+
+                                <div className="prize-single-collectible d-flex w-100 ml-3">
+                                    <input type="text" placeholder="e. g.  Medium" />
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div className="mt-5">
+                            <div className="d-flex">
+                                <h5><b>Alternative text for NFT</b> </h5><span><small className="color-gray ml-2">(Optional)</small></span>
                             </div>
 
+                            <div className="prize-single-collectible">
+                                <input type="text" placeholder="Describe the Image in detail" />
+                            </div>
+
+                            <div className="mt-2"><small><span className="color-gray">Text that will be used in VoiceOver for people with disabilities.</span></small></div>
                         </div>
-                    </div>
-
-
-
-                    <div className="mt-5">
-                        <div className="d-flex">
-                            <h5><b>Alternative text for NFT</b> </h5><span><small className="color-gray ml-2">(Optional)</small></span>
-                        </div>
-
-                        <div className="prize-single-collectible">
-                            <input type="text" placeholder="Describe the Image in detail" />
-                        </div>
-
-                        <div className="mt-2"><small><span className="color-gray">Text that will be used in VoiceOver for people with disabilities.</span></small></div>
-                    </div>
-                    </div>
+                    </div> */}
 
 
 
@@ -287,14 +300,16 @@ const CreateCollectibleMulti = () => {
                         <button className="btn-primary-outline w-100">Show advance setting</button>
                     </div>
 
-                    <div className="mt-5">
+                    <div className="mt-4">
                         <button className="btn-ping  w-100">Create Item</button>
                     </div>
 
                     <div className="mt-4 color-gray text-center">
-                        <span>Unsaved Changes </span> <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M1.66602 9.99984C1.66602 14.6023 5.39685 18.3332 9.99935 18.3332C14.6018 18.3332 18.3327 14.6023 18.3327 9.99984C18.3327 5.39734 14.6018 1.6665 9.99935 1.6665C5.39685 1.6665 1.66602 5.39734 1.66602 9.99984ZM16.6657 9.99988C16.6657 13.6818 13.6809 16.6665 9.99902 16.6665C6.31712 16.6665 3.33236 13.6818 3.33236 9.99988C3.33236 6.31798 6.31712 3.33321 9.99902 3.33321C13.6809 3.33321 16.6657 6.31798 16.6657 9.99988ZM10.8324 12.4999V14.1665H9.16569V12.4999H10.8324ZM10.8327 11.6665V11.129C12.2024 10.7207 13.0746 9.38034 12.8932 7.96267C12.7118 6.54499 11.53 5.46749 10.1017 5.41735C8.6733 5.36721 7.41891 6.3592 7.13851 7.76066L8.77351 8.08816C8.90257 7.44247 9.51039 7.00762 10.1632 7.09395C10.8159 7.18029 11.2898 7.75821 11.2466 8.41525C11.2033 9.07229 10.6578 9.58312 9.99934 9.58316C9.53911 9.58316 9.16601 9.95626 9.16601 10.4165V11.6665H10.8327Z" fill="#979797" />
-                        </svg>
+                        <span>Unsaved Changes </span>
+                        <span className="tooltp" data-title="Attach file or add title to save your changes.">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M1.66602 9.99984C1.66602 14.6023 5.39685 18.3332 9.99935 18.3332C14.6018 18.3332 18.3327 14.6023 18.3327 9.99984C18.3327 5.39734 14.6018 1.6665 9.99935 1.6665C5.39685 1.6665 1.66602 5.39734 1.66602 9.99984ZM16.6657 9.99988C16.6657 13.6818 13.6809 16.6665 9.99902 16.6665C6.31712 16.6665 3.33236 13.6818 3.33236 9.99988C3.33236 6.31798 6.31712 3.33321 9.99902 3.33321C13.6809 3.33321 16.6657 6.31798 16.6657 9.99988ZM10.8324 12.4999V14.1665H9.16569V12.4999H10.8324ZM10.8327 11.6665V11.129C12.2024 10.7207 13.0746 9.38034 12.8932 7.96267C12.7118 6.54499 11.53 5.46749 10.1017 5.41735C8.6733 5.36721 7.41891 6.3592 7.13851 7.76066L8.77351 8.08816C8.90257 7.44247 9.51039 7.00762 10.1632 7.09395C10.8159 7.18029 11.2898 7.75821 11.2466 8.41525C11.2033 9.07229 10.6578 9.58312 9.99934 9.58316C9.53911 9.58316 9.16601 9.95626 9.16601 10.4165V11.6665H10.8327Z" fill="#979797" />
+                            </svg>
                         </span>
                     </div>
 

@@ -240,7 +240,28 @@
     .following-profile-topSellerContent .d-flex.activity .topSellerCard {
         width: calc(25% - 26px);
     }
+    header + section {
+        padding-top: 90px;
+    }
+    .main-title .back {
+        left: -85px;
+        top: 3px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .create-single-section-container div.putOnMarketplace{
+        width: 140px;
+        height: 140px;
+    }
+    .create-single-section-container .swiper-slide .putOnMarketplace{
+        width: auto;
+    }
+    .choose-collection .slider {
+        width: calc(100% - 140px);
+    }
 }
+
 @media only screen and (max-width: 991px) {
     header .navbar-expand-lg > .container-fluid {
         padding-right: 15px;
@@ -306,6 +327,7 @@
     .main-title {
         font-size: 24px;
         margin-bottom: 0 !important;
+        letter-spacing: 0;
     }
     .artwork-item {
         width: 30.7%;
@@ -384,6 +406,10 @@
     .following-profile-topSellerContent .d-flex.activity .topSellerCard {
         width: calc(33.33% - 26px);
     }
+    .pl-5.brand-new-nfp {
+        padding-left: 16px !important;
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -407,9 +433,6 @@
         margin-top: 60px;
         padding-top: 10px;
         padding-top: 30px !important;
-    }
-    section {
-        padding:20px 0 !important;
     }
     .nft-start .section-title {
         font-size: 36px !important;
@@ -531,16 +554,19 @@
         position: absolute !important;
         top: -15px !important;
         right: 10px !important;
-        background: #fff !important;
         padding: 0 5px !important;
     }
-    .create-collectible .create-col {
-        padding: 15px !important;
-        margin-right: 15px !important;
+    .create-collectible div.create-col {
+        padding: 30px 30px 20px 30px;
     }
-    .create-single-section-container .putOnMarketplace {
-        padding: 15px !important;
-        margin-right: 10px !important;
+    .create-collectible div.create-col img {
+        max-width: 100px;
+    }
+    .create-collectible button.single-create-collectible {
+        top: -20px;
+        font-size: 10px !important;
+        padding: 1px 12px !important;
+        height: 32px !important;
     }
     .profile-user-pictures {
         width: 103px !important;
@@ -788,7 +814,7 @@
     }
 
     h2{
-        font-size: 28px !important;
+        font-size: 22px !important;
     }
 
     h3{
@@ -800,7 +826,7 @@
     }
 
     h5{
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 
 
@@ -1247,7 +1273,107 @@
     .faq-sec .container-fluid {
         padding-top: 70px;
     }
-
+    header + section {
+        padding-top: 80px;
+    }
+    section div.main-box {
+        margin-top: 0 !important;
+    }
+    .main-title .back {
+        position: static;
+        margin-bottom: 20px;
+    }
+    .main-title .back svg {
+        width: 18px;
+        margin-top: 2px;
+    }
+    div.main-box > p.color-gray {
+        font-size: 14px;
+        margin-top: 20px !important;
+    }
+    .create-single-section-container > .container {
+        max-width: 954px;
+        padding: 0 5px;
+    }
+    div.upload-file-container {
+        padding: 35px;
+    }
+    .upload-file-container button.btn-primary {
+        Width: 275.33px !important;
+        Height: 48px !important;
+        margin-top: 13px !important;
+    }
+    .custom-switch {
+        margin-right: 12px;
+    }
+    .marketplace .marketplace-content {
+        padding-right: 70px;
+        line-height: 130%;
+        font-weight: 600;
+    }
+    .create-single-section-container div.putOnMarketplace {
+        padding: 15px;
+        height: auto;
+        margin-right: 14px;
+        min-width: 30.53%;
+        min-height: 110px;
+        margin-bottom: 20px;
+    }
+    .create-single-section-container div.putOnMarketplace img {
+        width: 22px;
+    }
+    .create-single-section-container div.putOnMarketplace b {
+        margin-top: 7px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .btn-primary-outline-responsive,
+    .border {
+        border-radius: 15px !important;
+    }
+    .create-single-section-container div .prize-single-collectible {    
+        margin-top: 0;
+    }
+    .prize-single-collectible .color-gray {
+        font-size: 14px;
+    }
+    .create-single-section-container div .prize-single-collectible .d-flex {
+        align-items: center;
+        border-radius: 50px !important;
+        border-color: var(--pink-color) !important;
+    }
+    .prize-single-collectible .section-select-filter {
+        background: transparent;
+    }
+    .prize-single-collectible > div.color-gray:last-child{
+        margin-top: 5px;
+        padding-right: 100px;
+        font-weight: 600;
+        line-height: 130%;
+    }
+    .pl-5.brand-new-nfp {
+        display: none;
+    }
+    .create-single-section-container .choose-collection > div.putOnMarketplace{
+        min-height: 120px;
+        min-width: 120px;
+        width: auto;
+        margin: 0;
+    }
+    .create-single-section-container .choose-collection div.slider .putOnMarketplace{
+        width: auto;
+        margin: 0;
+        height: 100%;
+    }
+    .choose-collection div.slider {
+        width: calc(100% - 120px);
+    }
+    .pl-5.brand-new-nfp {
+        margin-top: 20px;
+    }
+    .copies .h-75 {
+        height: auto !important;
+    }
 }
 
 @media only screen and (max-width: 376px) {

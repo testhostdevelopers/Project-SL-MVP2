@@ -20,23 +20,24 @@ const CreateCollectible = () => {
             variants={variants} className="create-collectible">
             <div className="container">
                 <div className="row d-flex justify-content-center">
-                    <div className="col-sm-12">
-                        <Link className="d-flex align-items-center" to="/">
-                            <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M14 7.33341H4.55333L8.28 3.60675L7.33333 2.66675L2 8.00008L7.33333 13.3334L8.27333 12.3934L4.55333 8.66675H14V7.33341Z" fill="#141414" />
-                            </svg>
-                            <h6 className="ml-3 mb-0">Back</h6>
-                        </Link>
-                    </div>
-
-                    <div className="col-sm-12 col-lg-6 mt-4">
-                        <h1>Create Collectible</h1>
+                    <div className="col-sm-12 col-lg-6 mt-4 main-box">
+                        <h1 className="main-title">
+                            <div className="back">
+                                <Link className="d-flex align-items-center" to="/">
+                                    <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fillRule="evenodd" clipRule="evenodd" d="M14 7.33341H4.55333L8.28 3.60675L7.33333 2.66675L2 8.00008L7.33333 13.3334L8.27333 12.3934L4.55333 8.66675H14V7.33341Z" fill="#141414" />
+                                    </svg>
+                                    <h6 className="ml-3 mb-0">Back</h6>
+                                </Link>
+                            </div>
+                            Create Collectible
+                        </h1>
 
                         <div className="color-gray mt-4">
                             Choose “single” if you want your collectible to be one of a kind or ”multiple” if you want to sell one collectible multiple times
                         </div>
 
-                        <div className="mt-4 d-flex justify-content-center create-collectible-select">
+                        <div className="mt-4 d-flex create-collectible-select">
                             <div className="position-relative">
                                 <Link to="/CreateCollectibleSingle">
                                     <div className="create-col border-radius border d-flex justify-content-center align-items-center flex-column">

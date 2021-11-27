@@ -135,36 +135,53 @@
     font-size: 38px;
     color: var(--light-gray);
 }
-
+.upload-file-container > .color-gray {
+	font-weight: normal !important;
+	font-size: 13px;
+}
 .create-collectible .single-create-collectible {
-    top: -15px;
-    position: absolute;
-    font-size: 12px;
-    right: 40px;
-    padding: 0;
+	top: -20px;
+	position: absolute;
+	font-size: 12px !important;
+	right: 0px;
+	padding: 1px 22px !important;
+	height: 37px !important;
+	background: #6300FF;
+}
+.create-collectible .single-create-collectible:hover{
+	background: #4302A8;
 }
 
 .create-collectible .create-collectible-select {
     display: flex;
+    margin-top: 40px !important;
+    justify-content: space-between;
+}
+.create-collectible .create-collectible-select > div {
+	width: 46.4%;
 }
 
 .create-collectible .create-col {
-    padding: 20px 45px;
-    margin-right: 45px;
+	padding: 34px 45px;
+	height: 100%;
+}
+.create-collectible .create-col img {
+	max-width: 120px;
 }
 
 .upload-file-container {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 25px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px dashed #0E0E0E;
-    box-sizing: border-box;
-    border-radius: 30px;
-    max-width: 320px;
+	padding: 34px 10px 54px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 25px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px dashed #0E0E0E;
+	box-sizing: border-box;
+	border-radius: 30px;
+	max-width: 100%;
+	width: 100%;
 }
 
 .upload-file-container  button.btn-primary{
@@ -191,18 +208,23 @@
 }
 
 .create-single-section-container .putOnMarketplace {
-    padding: 65px 25px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
 }
-
+.choose-collection .slider {
+	width: calc(100% - 160px);
+}
 .create-single-section-container .putOnMarketplace b {
-    margin-top: 15px;
-    text-align: center;
+	margin-top: 15px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 130%;
 }
 
 .create-single-section-container div .prize-single-collectible {
@@ -572,4 +594,11 @@ footer .topSeller .headerSelect .ant-select-single.ant-select-show-arrow .ant-se
 
 .CreateCollectibleEdit-right{
     padding-left: 75px !important;
+}
+.main-box > p.color-gray {
+	font-weight: 600;
+	font-size: 16px;
+	margin-top: 28px !important;
+	line-height: 140%;
+	letter-spacing:0;
 }

@@ -6,6 +6,28 @@
 /*
     NFT MarketPlace Veriables
 */
+html body,
+body p{
+    font-family: AvertaStd;
+    font-weight: normal;
+}
+body p{
+    font-size: 14px;
+}
+body b,
+body strong {
+	font-weight: 600;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	font-weight: 600 !important;
+}
+
 
 body .container,
 body .container-fluid,
@@ -143,7 +165,6 @@ nav h3,
 .create-single-section-container h6{
     color: var(--black-color);
     background-color: var(--bg-main);
-    font-weight: bold !important;
 }
 
 .create-single-section-container .prize-single-collectible input{
@@ -275,7 +296,7 @@ border-bottom: solid 1px var(--gray-color);
 .btn-primary-outline-responsive {
     background: transparent;
     border: solid 1px var(--primary-gradient);
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 14px;
     padding: 12px 25px;
     color: var(--red-color);
@@ -946,9 +967,9 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 } */
 
 .border{
-    border: solid 1px var(--pink-color) !important;
-    border-radius: 30px !important;
-    padding: 0 20px;
+    border: solid 1px var(--border-color) !important;
+    border-radius: 20px !important;
+    padding: 0 10px;
 }
 
 
@@ -959,11 +980,6 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
     box-shadow: none !important;
 }
-
-.create-single-section-container .swiper-slide{
-    width: 200px !important;
-}
-
 .profile-usr-name-h3-size h3{
     font-size: 24px !important;
     text-align: center;
@@ -1486,9 +1502,22 @@ section .container-fluid,
 .artWorkWeekSection .container-fluid {
 	padding: 0 40px;
 }
-.main-title{
-    font-size: 40px;
-    line-height: 111.8%;
+.main-title {
+	font-size: 40px;
+	line-height: 111.8%;
+	position: relative;
+	font-weight: 600 !important;
+	letter-spacing: -2.7px;
+}
+.main-title .back {
+	position: absolute;
+	left: -177px;
+	top: 10px;
+}
+.main-title .back h6 {
+	letter-spacing: 0;
+	margin-left: 4px !important;
+	font-size: 12px;
 }
 section.artWorkWeekSection {
 	padding-top: 82px;
@@ -1877,13 +1906,66 @@ h4.pro-username{
     font-size: 18px;
     color: #0E0E0E;
 }
-
-.create-single-section-container,
-.token-page-section{
-    margin-top: 60px;
-}
-
 .activity-list-container > div > img{
     width: 120px;
 }
 
+header + section {
+	padding-top: 148px;
+}
+section div.main-box {
+	-ms-flex: unset;
+	flex: unset;
+	max-width: 600px;
+	width: 100%;
+}
+
+.create-single-section-container > .container {
+	max-width: 954px;
+	margin-top: 33px;
+}
+.tooltp {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+    padding: 0px 2px 2px 2px;
+    cursor: pointer;
+}
+.tooltp svg {
+	opacity: 0.5;
+}
+.tooltp::before {
+	content: attr(data-title);
+	position: absolute;
+	background: #FFF;
+	box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2);
+	width: 214px;
+	height: 56px;
+	top: 100%;
+	left: -100px;
+	padding: 10px 20px;
+	font-family: AvertaStd;
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	color: #000000;
+	font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.tooltp:hover:before{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.brand-new-nfp .upload-box {
+	height: 516px;
+	position: sticky;
+	top: 20px;
+}
+.prize-single-collectible .d-flex.border * {
+	background: transparent;
+}
