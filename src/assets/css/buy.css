@@ -216,6 +216,12 @@
     width: 160px;
     height: 160px;
 }
+.multi.create-single-section-container .d-flex:not(.choose-collection) > .putOnMarketplace{
+	-ms-flex: 0 0 48%;
+	flex: 0 0 48%;
+	max-width: 48%;
+	width: 100%;
+}
 .choose-collection .slider {
 	width: calc(100% - 160px);
 }
@@ -239,7 +245,7 @@
     padding: 13px 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 6px;
+    margin-top: 12px;
     font-size: 16px;
     color: #9D9D9D !important;
 }
@@ -330,6 +336,7 @@ span.profile-check-icon {
 	padding: 10px 10px;
 	min-width: 120px;
 	max-width: 168px !important;
+	z-index: 1;
 }
 .profile-pictures-infos .profile-upload,
 .profile-pictures-infos .select {

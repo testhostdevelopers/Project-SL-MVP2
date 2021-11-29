@@ -21,7 +21,7 @@ export default function TopCard ({title,follow,btnname,datetime,Price,topuserimg
             <h5 className="color-ping mt-2 mb-2">{follow}</h5>
             <small>{datetime}</small>
             <small>{Price}</small>
-            <button className="btn-ping w-100 mt-3">{btnname}</button>
+            <button className={`${(btnname === "Follow") ? 'btn-ping w-100 follow' : 'btn-ping w-100  un-follow' }`}>{btnname}</button>
         </div>
       </div>
   );

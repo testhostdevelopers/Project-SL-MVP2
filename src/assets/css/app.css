@@ -1572,11 +1572,6 @@ div.ant-tabs > .ant-tabs-nav{
 .topSellerUserInfo button:empty{
     display: none;
 }
-.profile-tab-menu .liveAuction-card-container .live-user-list {
-	position: relative;
-	top: auto;
-	left: auto;
-}
 
 div.cryptoloria-page {
 	margin-top: 172px;
@@ -1968,4 +1963,38 @@ section div.main-box {
 }
 .prize-single-collectible .d-flex.border * {
 	background: transparent;
+}
+.topSellerUserInfo .btn-ping.follow {
+	background: transparent;
+	border: 1px solid var(--pink-color);
+	color: var(--pink-color);
+}
+.topSellerUserInfo .btn-ping.follow:hover {
+	background: var(--pink-color);
+	color: var(--white) !important;
+}
+.prize-single-collectible .btn-primary-outline {
+	padding: 5px 15px;
+	height: auto !important;
+}
+.profile-edit-verified-container .btn-primary-outline {
+	background:var(--white);
+}
+.btn-primary.profile-edit-verified-btn {
+	background: var(--pink-color);
+}
+.btn-primary.profile-edit-verified-btn:hover{
+	background: #5502D7;
+}
+.place-a-bid-popup-container h3 {
+	font-weight: normal !important;
+}
+.place-a-bid-popup-container h5 {
+	font-size: 18px;
+	line-height: 130%;
+}
+.place-a-bid-popup-container h5 + span {
+	font-size: 14px;
+	line-height: 130%;
+    margin-top: 4px;
 }

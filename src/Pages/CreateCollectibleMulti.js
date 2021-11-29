@@ -37,7 +37,7 @@ const CreateCollectibleMulti = () => {
             <motion.section
                 initial="hidden"
                 animate="visible"
-                variants={variants} className="create-single-section-container">
+                variants={variants} className="create-single-section-container multi">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 d-flex align-items-center mb-4">
@@ -75,9 +75,9 @@ const CreateCollectibleMulti = () => {
 
                                 <div className="color-gray marketplace-content">Enter price to allow user instantly purchase your NFT</div>
 
-                                <div className="d-flex justify-content-between mt-3 row">
-                                    <div className="putOnMarketplace border-radius btn-primary-outline-responsive col-sm-12 col-lg-5"><img src={collectibleSingle} width="32" alt="" /><b> Fixed <br/> Price</b></div>
-                                    <div className="putOnMarketplace border-radius border-gray col-sm-12 col-lg-5"><img src={sonsuz} width="40" alt="" /> <b>Open for <br/> bids</b></div>
+                                <div className="d-flex justify-content-between mt-3">
+                                    <div className="putOnMarketplace border-radius btn-primary-outline-responsive col-sm-12 col-md-5"><img src={collectibleSingle} width="32" alt="" /><b> Fixed <br/> Price</b></div>
+                                    <div className="putOnMarketplace border-radius border-gray col-sm-12 col-md-5"><img src={sonsuz} width="40" alt="" /> <b>Open for <br/> bids</b></div>
                                 </div>
 
                                 <div className="mt-5">

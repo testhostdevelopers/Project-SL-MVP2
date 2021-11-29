@@ -20,7 +20,6 @@ import SignIn from './Pages/SignIn';
 import Token from './Pages/Token';
 import Activity from './Pages/Activity';
 import Following from './Pages/Following';
-import ProfileAdditionalDetails from './Pages/ProfileAdditionalDetails';
 
 import FullScreenImage from './Components/Popup/FullScreenImage';
 import CreateCollectibleMultiplePopup from './Components/Popup/CreateCollectibleMultiplePopup';
@@ -56,7 +55,6 @@ const App = () => {
                     <Route path="/CreateCollectibleSingle" component={CreateCollectibleSingle} exact />
                     <Route path="/Faq" component={Faq} exact />
                     <Route path="/Profile" component={Profile} exact />
-                    <Route path="/ProfileAdditionalDetails" component={ProfileAdditionalDetails} exact />
                 </Switch>
                 <Footer />
             </Router>

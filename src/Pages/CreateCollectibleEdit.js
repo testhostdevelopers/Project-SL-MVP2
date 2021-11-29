@@ -31,7 +31,7 @@ const CreateCollectibleEdit = () => {
                             <h2>Edit Profile</h2>
                         </div>
 
-                        <div className="col-sm-12 col-lg-6 mobile-sm-order-right CreateCollectibleEdit-left">
+                        <div className="col-sm-12 col-md-7 mobile-sm-order-right CreateCollectibleEdit-left">
                             <div className="mt-5">
                                 <h5 className="m-0"><b>Display Name</b></h5>
 
@@ -93,7 +93,7 @@ const CreateCollectibleEdit = () => {
 
 
                         </div>
-                        <div className="col-sm-12 col-lg-4 mobile-sm-order-left CreateCollectibleEdit-right">
+                        <div className="col-sm-12 col-md-5 mobile-sm-order-left CreateCollectibleEdit-right">
                             <div className="w-100">
                                 <h5><b> Upload Profile Picture</b></h5>
                             </div>
