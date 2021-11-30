@@ -4,9 +4,7 @@ import unlock from "../assets/img/icons/custom/unlock.svg";
 import sonsuz from "../assets/img/icons/custom/sonsuz.svg";
 import plus from "../assets/img/icons/custom/plus.svg";
 import darkcircle from "../assets/img/icons/custom/darkcircle.svg";
-import {
-    Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 import CreateCollectibleMultiplePopup from '../Components/Popup/CreateCollectibleMultiplePopup';
 import { Select } from 'antd';
 import { Swiper, SwiperSlide } from "swiper/react";

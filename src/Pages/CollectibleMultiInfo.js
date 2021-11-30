@@ -34,11 +34,11 @@ const CollectibleMultiInfo = () => {
                         </Link>
                     </div>
 
-                    <div className="col-sm-12 mt-5">
+                    <div className="col-sm-12 mt-4 mb-4">
                         <h2>Create multiple collectible</h2>
                     </div>
 
-                    <div className="col-sm-12 col-lg-6 mb-5 mobile-sm-order-right">
+                    <div className="col-sm-12 col-md-7 mobile-sm-order-right">
                         <b className="mt-5">Upload File</b>
 
                         <div className="upload-file-container">
@@ -58,7 +58,7 @@ const CollectibleMultiInfo = () => {
 
                             <div className="color-gray">Enter price to allow user instantly purchase your NFT</div>
 
-                            <div className="d-flex justify-content-center mt-3">
+                            <div className="d-flex mt-3">
                                 <div className="putOnMarketplace border-radius btn-primary-outline-responsive"><img src={collectibleSingle} width="32" alt="" /><b> Fixed Price</b></div>
                                 <div className="putOnMarketplace ml-3 border-radius border"><img src={sonsuz} width="40" alt="" /> <b>Open for bids</b></div>
                             </div>
@@ -181,7 +181,7 @@ const CollectibleMultiInfo = () => {
                                 <button className="btn-primary-outline w-100">Show less advance setting</button>
                             </div>
 
-                            <div className="mt-5">
+                            <div className="mt-4">
                                 <button className="btn-ping  w-100">Create Item</button>
                             </div>
 
@@ -195,16 +195,16 @@ const CollectibleMultiInfo = () => {
 
                         </div>
                     </div>
-                    <div className="col-sm-12 col-lg-3 mobile-sm-order-left">
-                        <h5><b>Preview</b> </h5>
-                        <div className="liveAuction">
+                    <div className="col-sm-12 col-md-5 pl-5 brand-new-nfp">
+                        <b>Preview</b>
+                        <div className="liveAuction upload-box">
                             <div className="liveAuction-card-container">
                                 <div className="live-image">
                                     <img src={multipleInfoCard} width="100%" alt="" />
                                 </div>
 
                                 <div className="bg-white p-4">
-                                    <div className="position-relative live-user-list pl-2">
+                                    <div className="live-user-list pl-2">
                                         <img src={topSellerUser1} width="36px" alt="" />
                                         <img src={topSellerUser2} width="36px" alt="" />
                                         <img src={topSellerUser3} width="36px" alt="" />

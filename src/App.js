@@ -20,6 +20,7 @@ import SignIn from './Pages/SignIn';
 import Token from './Pages/Token';
 import Activity from './Pages/Activity';
 import Following from './Pages/Following';
+import search from './Pages/search';
 
 import FullScreenImage from './Components/Popup/FullScreenImage';
 import CreateCollectibleMultiplePopup from './Components/Popup/CreateCollectibleMultiplePopup';
@@ -27,6 +28,7 @@ import FinishedCollectiblePopup from './Components/Popup/FinishedCollectiblePopu
 import PlaceABidPopup from './Components/Popup/PlaceABidPopup';
 import PlaceABidFollowPopup from './Components/Popup/PlaceABidFollowPopup';
 import CoinConverPopup from './Components/Popup/CoinConverPopup';
+
 
 import 'swiper/swiper-bundle.css';
 import {
@@ -55,6 +57,7 @@ const App = () => {
                     <Route path="/CreateCollectibleSingle" component={CreateCollectibleSingle} exact />
                     <Route path="/Faq" component={Faq} exact />
                     <Route path="/Profile" component={Profile} exact />
+                    <Route path="/search" component={search} exact />
                 </Switch>
                 <Footer />
             </Router>

@@ -789,7 +789,9 @@ small.text-secondary {
 .margin-50{
     margin-top: 100px !important;
 }
-
+header + section.margin-50 {
+	margin-top: 0 !important;
+}
 .nft-start .slider-content .slider-conter-absolute h6{
     font-size: 14px;
     margin-bottom: 0;
@@ -874,8 +876,10 @@ font-size: 12px;
     border: solid 1px var(--pink-color);
     border-radius: 30px;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    padding: 6px 25px;
-    text-align: center;
+    padding: 6px 15px;
+    min-width: 130px;
+    max-width: 160px;
+    text-align: right;
 }
 
 footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
@@ -1001,9 +1005,11 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     border-width: 2px !important;
 }
 
-.profile-not-found-browse-btn{
-    border: solid 1px var(--gray-bg);
-    margin: auto auto;
+.profile-not-found-browse-btn {
+	border: solid 1px var(--gray-bg);
+	margin: auto auto;
+	height: auto !important;
+	padding: 10px 15px !important;
 }
 
 .d-lg-block{
@@ -1105,10 +1111,15 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     border-radius: 50%;
 }
 
-.ant-select-item-option-content{
-    padding: 6px;
+div.ant-select-dropdown {
+	padding: 0;
 }
-
+.ant-select-item-option-content {
+	padding: 2px;
+}
+span.ant-select-selection-item {
+	font-size: 13px;
+}
 .ant-select-item-option-selected:not(.ant-select-item-option-disabled)::after{
     content: '\2713';
     position: absolute;
@@ -1233,6 +1244,8 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     max-height: 48px;
     margin-right: 20px;
     color: var(--black-text);
+    display: flex;
+    align-items: center;
 }
 
 .following-page-section svg{
@@ -1240,7 +1253,7 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 }
 
 .following-page-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    background-color: var(--black-color) !important;
+    background-color: var(--pink-color) !important;
     color: var(--white-color) !important;
 }
 
@@ -1249,9 +1262,12 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
-    border-color: var(--black-color) !important;
+    background-color: var(--pink-color) !important;
+    color: var(--white-color) !important;
 }
-
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover svg path {
+    fill: var(--white-color) !important;
+}
 
 .following-page-section .btn-primary-following svg path{
     fill: var(--black-text);
@@ -1645,7 +1661,11 @@ ul.filter.topSeller > li .label {
 ul.filter.topSeller > li .icon {
 	position: absolute;
 	top: 11px;
-    left: 13px;
+	left: 13px;
+	z-index: 1;
+}
+.ant-select-single.ant-select-show-arrow span.ant-select-selection-item{
+	padding-right: 22px;
 }
 ul.filter.topSeller > li .ant-select-single:not(.ant-select-customize-input) div.ant-select-selector {
 	padding-left: 40px;
@@ -1997,4 +2017,17 @@ section div.main-box {
 	font-size: 14px;
 	line-height: 130%;
     margin-top: 4px;
+}
+
+.profile-pictures-infos.search-page .ant-tabs-top > .ant-tabs-nav::before {
+	display: none;
+}
+.profile-pictures-infos.search-page .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap{
+    justify-content: flex-start;
+}
+.profile-pictures-infos.search-page .topSellerContent .d-flex{
+    padding: 0;
+}
+footer .ant-select-arrow {
+	right: 35px !important;
 }

@@ -360,6 +360,19 @@ header {
     border-top: solid 1px var(--gray-bg);
     border-bottom: solid 1px var(--gray-bg);
 }
+.notificationPopup .border-section > div {
+	width: 100%;
+}
+.notificationPopup .border-section > div > .d-flex {
+	width: 100%;
+}
+.notificationPopup .border-section .token-img {
+	width: 36px;
+}
+.notificationPopup .border-section .nav-link.nav-dark-button {
+	width: 36px;
+	height: 36px;
+}
 
 .notificationPopup .btn-dark-outline{
     padding: 10px 25px;

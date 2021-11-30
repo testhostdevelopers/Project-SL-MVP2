@@ -1,8 +1,15 @@
 import React from 'react'
-import { Menu, Dropdown, Tabs } from 'antd';
+import { Menu, Dropdown, Tabs, Select } from 'antd';
 import { motion } from "framer-motion"
+import menuline from "../assets/img/custom/menu-line-icon.png";
+import categoryicon from "../assets/img/custom/category-icon.png";
+import propertiesicon from "../assets/img/custom/properties.png";
+import flashlight from "../assets/img/custom/flashlight-line.png";
+import Priceicon from "../assets/img/custom/u_dollar-alt.png";
+
 
 const { TabPane } = Tabs;
+const { Option } = Select;
 
 const Following = () => {
 
@@ -22,7 +29,7 @@ const Following = () => {
                 <div className="container-fluid">
                     <div className="following-divition">
                         <h2>Following</h2>
-                        <ul className="nav nav-tabs" id="myTab" role="tablist">
+                        {/* <ul className="nav nav-tabs" id="myTab" role="tablist">
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,6 +67,82 @@ const Following = () => {
                                     </svg>
                                     Price range</a>
                             </li>
+                        </ul> */}
+
+                        <ul className="filter topSeller" >
+                            <li>
+                                <span className="label">Filter & Sort</span>
+                                <span className="icon">
+                                    <img src={menuline}/>
+                                </span>
+                                <Select className="section-select-filter" defaultValue="Recently added">
+                                    <Option value="day">Recently added</Option>
+                                    <Option value="week">Price: Low to High</Option>
+                                    <Option value="month">Price: High to Low</Option>
+                                    <Option value="sixYear">Auction ending soon</Option>
+                                </Select>
+                            </li>
+                            <li>
+                                <span className="icon">
+                                    <img src={categoryicon}/>
+                                </span>
+                                <Select className="section-select-filter" defaultValue="Category">
+                                    <Option value="All">All</Option>
+                                    <Option value="Cryptoloria">Cryptoloria</Option>
+                                    <Option value="Art">Art</Option>
+                                    <Option value="Photography">Photography</Option>
+                                    <Option value="Games">Games</Option>
+                                    <Option value="Metaverses">Metaverses</Option>
+                                </Select>
+                            </li>
+                            <li>
+                                <span className="icon">
+                                    <img src={categoryicon}/>
+                                </span>
+                                <Select className="section-select-filter" defaultValue="Collections">
+                                    <Option value="Cryptoloria">Cryptoloria</Option>
+                                    <Option value="Art">Art</Option>
+                                    <Option value="Photography">Photography</Option>
+                                    <Option value="Games">Games</Option>
+                                    <Option value="Metaverses">Metaverses</Option>
+                                </Select>
+                            </li>
+                            <li>
+                                <span className="label">Properties</span>
+                                <span className="icon">
+                                    <img src={propertiesicon}/>
+                                </span>
+                                <Select className="section-select-filter" defaultValue="All 257">
+                                    <Option value="day">Option 1</Option>
+                                    <Option value="week">Option 2</Option>
+                                    <Option value="month">Option 3</Option>
+                                    <Option value="sixYear">Option 4</Option>
+                                </Select>
+                            </li>
+                            <li>
+                                <span className="icon">
+                                    <img src={flashlight}/>
+                                </span>
+                                <Select className="section-select-filter" defaultValue="Sale type">
+                                    <Option value="day">Timed Auction</Option>
+                                    <Option value="week">Fixed price</Option>
+                                    <Option value="month">Not for sale</Option>
+                                    <Option value="sixYear">Open for offers</Option>
+                                </Select>
+                            </li>
+
+                            <li>
+                                <span className="icon">
+                                    <img src={Priceicon}/>
+                                </span>
+                                <Select className="section-select-filter" defaultValue="Price range">
+                                    <Option value="day">0 - 5</Option>
+                                    <Option value="week">5 - 10</Option>
+                                    <Option value="month">10 - 15</Option>
+                                    <Option value="sixYear">15 - 20</Option>
+                                </Select>
+                            </li>
+
                         </ul>
                     </div>
                     <div className="tab-content w-100 d-flex justify-content-center flex-column align-items-center mt-5" id="myTabContent">

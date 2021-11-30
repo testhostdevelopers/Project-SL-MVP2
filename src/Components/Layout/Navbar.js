@@ -369,7 +369,7 @@ const Navbar = () => {
 
                                                         <div className="d-flex justify-content-between mb-3">
                                                             <div className="d-flex">
-                                                                <div>
+                                                                <div className="token-img">
                                                                     <img src={userTick} width="36" />
                                                                 </div>
 
@@ -386,7 +386,7 @@ const Navbar = () => {
 
                                                         <div className="d-flex justify-content-between mb-3">
                                                             <div className="d-flex">
-                                                                <div>
+                                                                <div className="token-img">
                                                                     <img src={grayPp} width="36" />
                                                                 </div>
 
@@ -399,7 +399,7 @@ const Navbar = () => {
 
                                                         <div className="d-flex justify-content-between mb-3">
                                                             <div className="d-flex">
-                                                                <div>
+                                                                <div className="token-img">
                                                                     <img src={grayPp} width="36" />
                                                                 </div>
 
